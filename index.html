@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogodi broj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Igra pogađanja brojeva </h1>
+    <p>Zamislio sam jedan broj između 1 i 100. Probaj ga pogoditi! Imaš 10 pokušaja! </p>
+   
+
+    <button type="button" id="start" class="start-btn" onclick="start()">Kreni</button>
+    <button type="button" id="reset" class="reset-btn" onclick="window.location.reload()">Ponovno učitaj</button>
+
+    <div id="main-div" class="main-div">
+         Upiši broj: <input type="text" id="guess-box" class="guess-box">
+        <button type="button" id="check" class="check-btn" onclick="checkGuess()">Provjeri</button>
+
+        <div id="all-guesses">Vaš pokušaj: </div>
+        <div id="high-or-low" class=""></div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
